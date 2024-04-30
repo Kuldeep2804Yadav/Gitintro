@@ -34,27 +34,46 @@
 // }
 
 /// task 3
-const mainheading= document.querySelector("#main-heading");
-mainheading.style.textAlign="right";
+// const mainheading= document.querySelector("#main-heading");
+// mainheading.style.textAlign="right";
 
-const basketheading= document.querySelector("#basket-heading");
-basketheading.style.color="brown";
+// const basketheading= document.querySelector("#basket-heading");
+// basketheading.style.color="brown";
 
-const fruits=document.querySelector(".fruits");
-fruits.style.backgroundColor="gray";
-fruits.style.borderRadius="2px";
+// const fruits=document.querySelector(".fruits");
+// fruits.style.backgroundColor="gray";
+// fruits.style.borderRadius="2px";
 
-// Write answer to the questions asked below:
-const fruit = document.querySelectorAll(".fruit")
- for(var i=0; i<fruit.length;i++){
-   fruit[i].style.backgroundColor="white";
-   fruit[i].style.listStyleType="none";
-   fruit[i].style.margin="10px";
-   fruit[i].style.padding="10px";
-   fruit[i].style.borderRadius="3px";
- }
-const evenfruits = document.querySelectorAll(".fruit:nth-child(even)")
- for(var i=0; i<evenfruits.length;i++){
-   evenfruits[i].style.backgroundColor="brown"
-   evenfruits[i].style.color="white";
- }
+// // Write answer to the questions asked below:
+// const fruit = document.querySelectorAll(".fruit")
+//  for(var i=0; i<fruit.length;i++){
+//    fruit[i].style.backgroundColor="white";
+//    fruit[i].style.listStyleType="none";
+//    fruit[i].style.margin="10px";
+//    fruit[i].style.padding="10px";
+//    fruit[i].style.borderRadius="3px";
+//  }
+// const evenfruits = document.querySelectorAll(".fruit:nth-child(even)")
+//  for(var i=0; i<evenfruits.length;i++){
+//    evenfruits[i].style.backgroundColor="brown"
+//    evenfruits[i].style.color="white";
+//  }
+
+
+ /////task 4
+
+ const h2=document.createElement("h3");
+const htext=document.createTextNode("Buy high quality organic fruits online");
+h2.appendChild(htext);
+
+const divs = document.getElementsByTagName("div");
+const firstDiv=divs[0];
+firstDiv.appendChild(h2);
+h2.style.fontStyle="italic";
+
+const para =document.createElement("p");
+const paratext=document.createTextNode("Total fruits:4");
+para.appendChild(paratext);
+const secondDiv =divs[1];
+const fruits =document.querySelector(".fruits");
+secondDiv.insertBefore(para,fruits);
