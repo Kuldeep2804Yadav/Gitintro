@@ -16,3 +16,12 @@ var thanks =document.querySelector("#thanks");
 var paragraph =document.createElement("p");
 paragraph.textContent="Please visit us again";
 thanks.appendChild(paragraph);
+
+/// task 2
+
+const fruit =document.getElementsByClassName("fruit");
+fruit[2].style.backgroundColor="orange";
+
+for(var i=0; i<fruit.length; i++){
+    fruit[i].style.fontWeight="bold";
+}
