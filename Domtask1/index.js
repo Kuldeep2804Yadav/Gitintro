@@ -25,3 +25,10 @@ fruit[2].style.backgroundColor="orange";
 for(var i=0; i<fruit.length; i++){
     fruit[i].style.fontWeight="bold";
 }
+
+const listName = document.getElementsByTagName("li");
+listName[4].style.color="blue";
+
+for(var i=0;i<listName.length; i++){
+    listName[i].style.fontStyle="italic";
+}
